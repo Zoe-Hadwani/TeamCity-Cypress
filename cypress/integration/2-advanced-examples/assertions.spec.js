@@ -77,7 +77,7 @@ context("Assertions", () => {
           const paragraphs = texts.get();
 
           // array should have length of 3
-          expect(paragraphs, "has 3 paragraphs").to.have.length(6);
+          expect(paragraphs, "has 3 paragraphs").to.have.length(3);
 
           // use second argument to expect(...) to provide clear
           // message with each assertion
@@ -94,7 +94,7 @@ context("Assertions", () => {
         .find("div")
         // .should(cb) callback function will be retried
         .should(($div) => {
-          expect($div).to.have.length(3);
+          expect($div).to.have.length(1);
 
           const className = $div[0].className;
 
